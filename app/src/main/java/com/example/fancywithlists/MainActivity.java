@@ -37,10 +37,10 @@ public class MainActivity extends ListActivity {
         startManagingCursor(cur);
         String[] from = new String[]{"name"};
         int[] to = new int[]{android.R.id.text1};
-        SimpleCursorAdapter adapta = new SimpleCursorAdapter(this,android.R.layout.simple_spinner_dropdown_item,cur,from,to);
-        ArrayAdapter<CharSequence> adapter;
+      //  SimpleCursorAdapter adapta = new SimpleCursorAdapter(this,android.R.layout.simple_spinner_dropdown_item,cur,from,to);
+     //   ArrayAdapter<CharSequence> adapter;
 
-        adapta.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
         ArrayList<RowModel> list=new ArrayList<RowModel>();
 
         for (int i = 0; i < cur.getCount(); i++) {
